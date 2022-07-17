@@ -1,0 +1,1 @@
+web: gunicorn alphacentauri.wsgi --log-file -

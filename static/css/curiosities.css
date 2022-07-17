@@ -1,0 +1,92 @@
+.body{
+	background: #502958;
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header-div{
+	background-color: #FFB56C;	
+}
+
+.nav-link{
+	color: #502958  !important;
+}
+
+.nav-link:hover{
+	color: #fff4ea  !important;
+}
+
+.title div{
+	display: inline-block;
+}
+
+.title h1{
+	color: #FFB56C;
+	margin-top: 100px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+
+.title p{
+	color: #FFF4EA;
+	margin-top: 100px;
+	margin-left: 50px;
+	font-weight: bold; 
+	font-size: 20px;
+}
+
+.cards{
+	background: #FFF4EA;
+	height: 1000px;
+	margin-top: 282px;
+}
+
+.cards h5{
+	color: #ffb56c;
+	font-weight: bold;
+}
+
+.cards p{
+	color: #502958;
+	font-weight: bold;
+}
+
+.cards .card{
+	width: 500px;
+	margin: 0 0 0 70px;
+}
+
+.card-img-top{
+	width: 100px;
+	height: 300px;
+}
+
+.text-add{
+	color: #FFF4EA;
+	font-weight: bold;
+	text-align: center;
+	height: 400px;
+}
+
+.text-add p{
+	margin: 100px 0 0 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 0 0 0 50px;
+}
+
+/*footer*/
+
+.footer{
+	background: #FFB56C;
+	height: 100px;
+	color: #502958;
+	font-weight: bold;
+}
+
+.fa-brands{
+	font-size: 40px;
+	width: 60px;
+	color: #502958;
+}

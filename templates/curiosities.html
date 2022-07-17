@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/curiosities.css' %}">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link rel="icon" href="{% static 'img/proximac.png' %}" type="image/png">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/719a1b7543.js" crossorigin="anonymous"></script>
+	<title>{% block title %} Alpha Centauri System {% endblock %}</title>
+</head>
+<body class="body">
+	{% block content %}
+	<div class="header-div">
+		<header class="d-flex justify-content-center py-3">
+			<b><ul class="nav nav-pills">
+				<li class="nav-item"><a href="{% url 'home' %}" class="nav-link" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="{% url 'curiosities' %}" class="nav-link">Curiosities</a></li>
+				<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+			</ul></b>
+		</header>
+	</div>
+	<section>
+		<div class="title col-12">
+			<h1>Curiosities</h1>
+			<p>-The star Alpha Centauri C is also known by astronomy as Proxima Centauri, for being the second closest star after the Sun, but it is not visible to the naked eye, unlike Alpha Centauri A and B;<br><br>
+				- A project called StarShot, of which the late Stephen Hawking was a part, has a plan to launch a fleet of solar sails to this star system at 20% of the speed of light, with the possibility of getting there within a margin of up to 20 years; <br><br>
+			- The movie Avatar, by director James Cameron, takes place in this star system, but Pandora (the moon where the story takes place) is fictional.</p>
+		</div>
+	</section>
+
+	<section class="cards col-12">
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col">
+				<div class="card">
+					<img src="{% static 'img/ProximaCentauriB.png' %}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Proxima Centauri B</h5>
+						<p class="card-text">Artist's conception of the planet that is in the habitable zone (where there can be water, and even life) of the closest star to the Sun..</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="{% static 'img/proximab.png' %}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Surface of Proxima Centauri B</h5>
+						<p class="card-text">Artist's impression of the surface of the planet Proxima Centauri B.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="{% static 'img/AlphaCentauri_Hubble.jpg' %}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Alpha Centauri A and B</h5>
+						<p class="card-text">Image taken by the Hubble Telescope of the stars Alpha Centauri A and B.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="{% static 'img/orbit.jpg' %}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Orbit of system</h5>
+						<p class="card-text">Image showing in the center the stars Alpha Centauri A and B orbiting a common center of mass and outside the star Proxima Centauri (Alpha Centauri C) orbiting them.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text-add">
+		<p>- The star Proxima Centauri (Alpha Centauri C) takes about 550,000 years to orbit Alpha Centauri A and B;<br> <br>
+			- Among the three stars in the Alpha Centauri system, Proxima Centauri is the smallest in mass and the least bright; <br> <br>
+		- Light from the Alpha Centauri system takes a little over 4 years to be seen in one night here on Earth.</p>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+				<div class="col-md-4 d-flex align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+						<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+					</a>
+					<span class="mb-3 mb-md-0 text-muted">Made in Henrique Marques</span>
+				</div>
+
+				<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+					<li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/hmss7/"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li class="ms-3"><a class="text-muted" href="https://github.com/Henrique123-Marques"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</footer>
+		</div>
+	</section>
+	{% endblock %}
+</body>
+</html>

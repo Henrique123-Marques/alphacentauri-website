@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link rel="icon" href="{% static 'img/proximac.png' %}" type="image/png">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/719a1b7543.js" crossorigin="anonymous"></script>
+	<title>{% block title %} Alpha Centauri System {% endblock %}</title>
+</head>
+<body class="body">
+	{% block content %}
+	<div class="header-div">
+		<header class="d-flex justify-content-center py-3">
+			<b><ul class="nav nav-pills">
+				<li class="nav-item"><a href="{% url 'home' %}" class="nav-link" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="{% url 'curiosities' %}" class="nav-link">Curiosities</a></li>
+				<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+			</ul></b>
+		</header>
+	</div>
+	<section>
+		<div class="title col-12">
+			<h1>Why this website?</h1>
+			<p>This website is a project developed as a way to practice Python's Django framework, used for website development to enrich my portfolio.</p>
+		</div>
+	</section>
+
+	<section class="technologies">
+		<div class="tec-div">
+			<h4>I used this language and frameworks:</h4>
+			<img src="{% static 'img/python.png' %}" alt="">
+			
+			<img src="{% static 'img/django.png' %}" alt="">
+			
+			<img src="{% static 'img/bootstrap5.png' %}" alt="">
+		</div>
+	</section>
+
+	<section class="about-me">
+		<p>My full name is Henrique Marques Santos Silva, and this project is part <br> of the practice of studies with the Django framework of the Python <br> programming language. I'm a Computer Technician for Internet at <br> State Technical School São Mateus and looking for opportunities in the <br> job market in back-end development with Django.</p>
+		<img src="{% static 'img/hmss.jpg' %}" alt="">
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+				<div class="col-md-4 d-flex align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+						<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+					</a>
+					<span class="mb-3 mb-md-0 text-muted">Made in Henrique Marques</span>
+				</div>
+
+				<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+					<li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/hmss7/"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li class="ms-3"><a class="text-muted" href="https://github.com/Henrique123-Marques"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</footer>
+		</div>
+	</section>
+	{% endblock %}
+</body>
+</html>

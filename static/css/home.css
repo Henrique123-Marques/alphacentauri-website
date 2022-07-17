@@ -1,0 +1,84 @@
+.body{
+	background-color: #502958;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header-div{
+	background-color: #FFB56C;	
+}
+
+.nav-link{
+	color: #502958 !important;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	color: #fff4ea !important;
+}
+
+.title-image{
+	height: 400px;
+}
+
+.title img{
+	width: 400px; 
+	height: auto;
+	float: right;
+	margin: 110px 50px 0 0;
+}
+
+.title h1{
+	color: #FFB56C;
+	font-weight: bold;
+	float: left;
+	margin: 80px 0 0 40px;
+}
+
+.title p{
+	color: #FFF4EA;
+	font-weight: bold; 
+	font-size: 25px;
+	float: left;
+	margin: 80px 0 0 40px;
+}
+
+.sobre{
+	margin: 200px 0 0 0;
+	height: 670px;
+	background: #FFF4EA;
+	font-weight: bold;
+}
+
+.sobre p{
+	color: #502958;
+	font-size: 18px;
+	text-align: center;
+	padding: 50px 0 0 0;
+	margin: 0 0 40px 0;
+}
+
+.estrelas-proximas img{
+	width: 600px;
+	border: 10px solid #ffb56c;
+	display: block;
+	margin: auto;
+}
+
+.stars{
+	background: #502958;
+}
+
+/*footer*/
+
+.footer{
+	background: #FFB56C;
+	height: 100px;
+	color: #502958;
+	font-weight: bold;
+}
+
+.fa-brands{
+	font-size: 40px;
+	width: 60px;
+	color: #502958;
+}
